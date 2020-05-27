@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/">Back</ion-back-button>
+        </ion-buttons>
+        <ion-title class="ion-text-capitalize">Avatar</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-avatar>
+                <img src="/assets/flash-avatar.png" />
+            </ion-avatar>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+    <ion-chip color="primary" *ngFor="let i of [1,1,1,1,1,1]">
+        <ion-avatar>
+            <img src="/assets/flash-avatar.png " />
+        </ion-avatar>
+        <ion-label>The Flash</ion-label>
+    </ion-chip>
+
+    <ion-list>
+        <ion-item *ngFor="let i of [1,1,1,1,1,1,1] ">
+            <ion-avatar slot="start">
+                <img src="/assets/flash-avatar.png " />
+            </ion-avatar>
+            <ion-label>The Flash</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

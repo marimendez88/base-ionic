@@ -1,6 +1,11 @@
-<app-header titulo="alert page"></app-header>
+<app-header [titulo]="titulo || 'Alert page'"></app-header>
 
-<ion-content>
-    alert
-    <i class="fa fa-pagelines" aria-hidden="true"></i>
+<ion-content class="ion-padding">
+    <ion-button expand="full" color="primary" (click)="presentAlert()">
+        Alerta Simple
+    </ion-button>
+
+    <ion-button expand="full" color="secondary" (click)="presentAlertPrompt()">
+        Alerta Prompt
+    </ion-button>
 </ion-content>
