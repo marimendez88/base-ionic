@@ -42,10 +42,45 @@ export class InicioPage implements OnInit {
 			name: 'DateTime',
 			redirectTo: '/date-time',
 		},
+		{
+			icon: 'code',
+			name: 'Fab',
+			redirectTo: '/fab',
+		},
+		{
+			icon: 'grid',
+			name: 'Grid - Rows',
+			redirectTo: '/grid',
+		},
+		{
+			icon: 'leaf',
+			name: 'Infinite Scroll',
+			redirectTo: '/infinite-scroll',
+		},
+		{
+			icon: 'color-wand',
+			name: 'Input',
+			redirectTo: '/input',
+		},
+		{
+			icon: 'list',
+			name: 'Listas',
+			redirectTo: '/list',
+		},
+		{
+			icon: 'moon',
+			name: 'Listas Reorden',
+			redirectTo: '/list-reorder',
+		},
 	];
 	constructor() {}
 
 	ngOnInit() {}
+	doReorder(event) {
+		console.log('Dragged from index', event.detail.from, 'to', event.detail.to);
+
+		event.detail.complete();
+	}
 }
 
 interface Componente {
